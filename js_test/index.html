@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Test javascript task</title>
+    <script type="text/javascript" language="JavaScript">
+        function changePicture(obj) {
+            var name1 = 'myPicture';
+            var name2 = 'myPicture2';
+            var src1 = 'picture1.jpg', src2 = 'megamind.jpg';
+            var src = '', name = '';
+            if(obj.name == name1) {
+                src = src2;
+                name = name2;
+            }
+            else {
+                src = src1;
+                name = name1;
+            }
+            obj.src = src;
+            obj.name = name;
+        }
+    </script>
+</head>
+<body>
+<img src="picture1.jpg" name=”myPicture” onClick="changePicture(this);">
+</body>
+</html>
