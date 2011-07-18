@@ -23,4 +23,5 @@ include sitePath . 'includes' . DS . 'request.php'; // view for block with eleme
 
 $controller = new Controller();
 $controller->getPage();
+
 ?>
