@@ -8,12 +8,20 @@
 
 class TreeModel {
 	public $items, $newItems = Array(), $counter = 0;
+
+	function __construct() {
+		$password = 'qazwsxedc';
+		$user = 'root';
+		$server = 'localhost';
+		$database = 'stuzo_test';
+		mysql_connect($server, $user, $password);
+		mysql_select_db($database);
+	}
 	/**
 	 * @return bool
 	 */
 	function getTree() {
-		mysql_connect('localhost', 'root', 'qazwsxedc');
-		mysql_select_db('stuzo_test');
+
 		$query = "SELECT * FROM items;";
 
 		$result = mysql_query($query);

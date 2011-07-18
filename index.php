@@ -12,6 +12,8 @@ define ('sitePath', $sitePath);
 // includes, can be replaced with spl_autoload function
 // @TODO add spl_autoload function
 
+// To setup test task you need to change config in model Tree, function __construct and import SQL file
+
 include sitePath . 'model' . DS . 'Tree.php'; // Tree model
 include sitePath . 'model' . DS . 'Element.php'; // Element model
 include sitePath . 'view' . DS . 'View.php'; // main View class
